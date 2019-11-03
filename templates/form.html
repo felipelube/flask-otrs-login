@@ -1,0 +1,11 @@
+<!doctype html>
+<form action="" method="post">
+    
+    {{ form.csrf_token }}
+    
+    {{ form.login_type.label }} {{ form.login_type(size=20) }}
+    {{ form.username.label }} {{ form.username(size=20) }}
+    {{ form.password.label }} {{ form.password(size=20) }}
+    <input type="submit" value="Go">
+
+</form>
